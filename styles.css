@@ -1,9 +1,15 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-  background: linear-gradient(to bottom, #001f3f, #001a33);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(41, 70, 152, 1) 54%
+  );
 }
 
 .app-title {
@@ -15,12 +21,11 @@ body {
   text-align: center;
 }
 
-.container {
-  /* width: 375px; */
+.app-container {
   height: 800px;
   border: 1px solid;
-  margin: 10px;
   max-width: 600px;
+  position: relative;
 
   background-image: url("./assets/quiz-bg.jpg");
   background-size: cover;
@@ -72,3 +77,18 @@ body {
   margin: 30px;
   border-radius: 8px;
 } */
+
+.nav-bottom {
+  color: white;
+  background-color: rgb(4, 4, 41);
+  display: flex;
+  width: 600px;
+  height: 65px;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-around;
+}
+
+.nav-bottom-btn {
+}
