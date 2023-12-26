@@ -1,62 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-
+      <div class="app-title">Quiz App</div>
     </header>
-
     <div class="app-container">
-        <div class="app-title">
-            Quiz App
-        </div>
-        <div class="question-container">
-            <p>Question 1/5</p> <br>
-            <p style="text-align: center";>How can you center a div? </p>
-        </div>
+      <div id="question-container" class="question-container hide">
+        <div id="question-index"></div>
+        <div id="question" class="question">Question</div>
+      </div>
 
-        <div class="answers-container">
-            <div class="answer"><strong>A:</strong> .centered-div { <br>
-                text-align: center};</div>
-            <div class="answer"><strong>B:</strong> .centered-div {
-                margin: auto; }</div>
-            <div class="answer">C: .centered-div {
-                position: absolute; 
-                top: 50%;
-                left: 50%; }</div>
-            <div class="answer">D: .centered-div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }</div>
+      <div id="answer-buttons-container" class="answers-container"></div>
+
+      <div class="controls-container">
+        <button id="start-btn" class="start-btn">Start Quiz</button>
+        <button id="next-btn" class="next-btn hide">Next</button>
+      </div>
+
+      <div class="nav-bottom">
+        <div class="nav-bottom-btn">
+          <img src="assets/home.png" width="50px" />
         </div>
-        <div class="categories">
-            <div class="tag"></div>
-            <div class="tag"></div>
-            <div class="tag"></div>
+        <div class="nav-bottom-btn">
+          <img src="assets/bookmark.png" />
         </div>
-
-        <div class="nav-bottom">
-            <div class="nav-bottom-btn">
-                <img src="assets/home.png" width="50px">
-            </div>
-            <div class="nav-bottom-btn">
-                <img src="assets/bookmark.png">
-            </div>
-            <div class="nav-bottom-btn">
-                <img src="assets/user.png">
-            </div>
+        <div class="nav-bottom-btn">
+          <img src="assets/add.png" width="45px" />
         </div>
-
-
-
+        <div class="nav-bottom-btn">
+          <img src="assets/user.png" />
+        </div>
+      </div>
     </div>
-
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
