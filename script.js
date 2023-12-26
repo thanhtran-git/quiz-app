@@ -36,7 +36,7 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
-  questionIndex.innerText = `Question ${currentQuestionIndex + 1}`;
+  questionIndex.innerText = `Question ${currentQuestionIndex + 1} / 7`;
 
   questionElement.innerText = question.question;
   question.answers.forEach((answer) => {
@@ -78,7 +78,7 @@ function selectAnswer(e) {
     nextButton.classList.remove("hide");
   } else {
     startButton.innerText = "Restart Quiz";
-    // startButton.style.backgroundColor = "red";
+    startButton.style.backgroundColor = "orange";
     startButton.classList.remove("hide");
   }
 }
